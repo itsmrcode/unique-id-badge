@@ -1,0 +1,10 @@
+{
+  "name": "unique-id-label-pro",
+  "description": "Trello power-up to display unique ID label on cards",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "trello": "^1.4.0"
+  }
+}
