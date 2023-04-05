@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input[type=text],
+select {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type=submit] {
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #0079BF;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type=submit]:hover {
+    background-color: #005A8C;
+}
+
+.card-detail-badge {
+    margin-right: 8px;
+}
+
+.card-detail-badge-icon {
+    margin-right: 4px;
+}
+
+.fa-tag {
+    font-size: 16px;
+}
+
+.fa-lg {
+    font-size: 24px;
+}
+
+.fa-2x {
+    font-size: 32px;
+}
+
+.fa-3x {
+    font-size: 48px;
+}
+
+.fa-4x {
+    font-size: 64px;
+}
+
+.fa-5x {
+    font-size: 80px;
+}

@@ -1,62 +1,38 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Unique ID Label Pro Settings</title>
-  </head>
-  <body>
-    <div class='form-group'>
-      <label for='color'>Color:</label>
-      <select id='color'>
-        <option value='gray'>Gray</option>
-        <option value='blue'>Blue</option>
-        <option value='green'>Green</option>
-        <option value='orange'>Orange</option>
-        <option value='red'>Red</option>
-        <option value='yellow'>Yellow</option>
-      </select>
-    </div>
-    <div class='form-group'>
-      <label for='size'>Size:</label>
-      <select id='size'>
-        <option value='normal'>Normal</option>
-        <option value='small'>Small</option>
-        <option value='large'>Large</option>
-      </select>
-    </div>
-    <div class='form-group'>
-      <label for='font'>Font:</label>
-      <select id='font'>
-        <option value='sans-serif'>Sans-serif</option>
-        <option value='serif'>Serif</option>
-        <option value='monospace'>Monospace</option>
-      </select>
-    </div>
-    <div class='form-group'>
-    <label for='position'>Position:</label>
-    <select id='position'>
-    <option value='top-left'>Top Left</option>
-    <option value='top-right'>Top Right</option>
-    <option value='bottom-left'>Bottom Left</option>
-    <option value='bottom-right'>Bottom Right</option>
+<head>
+    <title>Badge Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+<h1>Badge Settings</h1>
+<form>
+    <label for="badgePrefix">Badge Prefix:</label>
+    <input type="text" id="badgePrefix" name="badgePrefix" value="#" required>
+    <br>
+    <label for="badgeColor">Badge Color:</label>
+    <select id="badgeColor" name="badgeColor">
+        <option value="gray">Gray</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
     </select>
-  </div>
-  <button id='save-button'>Save</button>
-  <script type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-  <script type='text/javascript'>
-  $(document).ready(function(){
-  $('#color').val(TrelloPowerUp.iframe().arg('color'));
-  $('#size').val(TrelloPowerUp.iframe().arg('size'));
-  $('#font').val(TrelloPowerUp.iframe().arg('font'));
-  $('#position').val(TrelloPowerUp.iframe().arg('position'));
-      $('#save-button').click(function(){
-        TrelloPowerUp.iframe().set('card', 'shared', {
-          'color': $('#color').val(),
-          'size': $('#size').val(),
-          'font': $('#font').val(),
-          'position': $('#position').val()
-        });
-        TrelloPowerUp.iframe().closePopup();
-      });
-    });
-  </script>
-  </body> 
-  </html>
+    <br>
+    <label for="badgeSize">Badge Size:</label>
+    <select id="badgeSize" name="badgeSize">
+        <option value="lg">Large</option>
+        <option value="2x">2x</option>
+        <option value="3x">3x</option>
+        <option value="4x">4x</option>
+        <option value="5x">5x</option>
+    </select>
+    <br>
+    <button type="submit" id="saveButton">Save</button>
+</form>
+<script src="./script.js"></script>
+</body>
+</html>
