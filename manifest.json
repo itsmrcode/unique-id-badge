@@ -1,0 +1,20 @@
+{
+  "name": "Card ID Badge",
+  "description": "A Trello power-up that adds a custom badge with a prefix and card ID to each card.",
+  "id": "your-unique-power-up-id",
+  "version": "1.0.0",
+  "author": {
+    "name": "Datarivers",
+    "email": "datarivers.org@gmail.com"
+  },
+  "url": "https://itsmrcode.github.io/unique-id-badge",
+  "capabilities": [
+    "card-badges",
+    "show-settings"
+  ],
+  "icons": {
+    "48": "./assets/icon-black.svg",
+    "128": "./assets/icon-white.svg"
+  }
+}
+
