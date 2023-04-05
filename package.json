@@ -1,10 +1,25 @@
 {
-  "name": "unique-id-label-pro",
-  "description": "Trello power-up to display unique ID label on cards",
+  "name": "unique-id-label",
   "version": "1.0.0",
-  "author": "Your Name",
-  "license": "MIT",
+  "description": "Trello power-up to display unique ID label on cards",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "trello": "^1.4.0"
-  }
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "6.10.x"
+  },
+  "repository": {
+    "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "github",
+    "unique id badge",
+    "id badge"
+  ]
 }
